@@ -1,0 +1,15 @@
+:root {
+    --black: #000;
+    --grey: #999;
+    --purple: #505;
+}
+
+.item--1{
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--purple);
+    text-align: center;
+}
