@@ -87,6 +87,17 @@ section > p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+
+    grid-column-gap: 1em;
+}
+
+#project article {
+    background: #ccc;
+    padding: 1em;
+}
+
+#project article img {
+    border: 1px solid #333;
 }
 
 footer {
