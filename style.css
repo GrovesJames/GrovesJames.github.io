@@ -10,7 +10,7 @@ h2 {
     text-align: center;
 }
    
-h1,h2,h3{
+h1,h2,h3,h4{
     color: #666;
 }
     
@@ -92,9 +92,27 @@ section > p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-
+  
     grid-column-gap: 1em;
+  } 
+  
+  @media screen and (max-width: 40em) {
+    #project {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1em;
+      
+      width: 60vw;
+      min-width: 22em;
+      margin: 1em auto;
+    }
 }
+ 
+  @media screen and (max-width: 25em) {
+    #project {
+      width: auto;
+      min-width: unset;
+    }
+  }
 
 #project article {
     background: #ccc;
@@ -112,4 +130,16 @@ footer {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+}
+
+#aboutme, p {
+    text-align: center
+}
+
+h4 {
+    text-align: center;
+}
+
+#aboutme img{
+    align-content: center;
 }
