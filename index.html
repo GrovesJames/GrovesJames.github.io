@@ -1,89 +1,96 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 
- <head>
-   <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+    content="ie-edge">
+    <script src="https://kit.fontawesome.com/887cb88cb6.js" crossorigin="anonymous"></script>
    <title>James' Portfolio</title> 
-   <link rel="stylesheet" type="text/css" href="style.css"> 
- </head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
+<body>
+    <div class="wrapper">
+        <!--nav-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href=".top-container">About me</a></li>
+                <li><a href=".boxes">Projects</a></li>
+                <li><a href="#info">Contact</a></li>
+            </ul>
+        </nav>
+        <!--top container-->
+        <secton class="top-container">
+            <header class="showcase">
+                <h1>James Groves</h1>
+                <p>Software Developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quidem!</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </header>
+            <div class="top-box top-box-a">
+                <img src="./images/headshot500by700.jpg"></img>
+            </div>
+            <!-- <div class="top-box top-box-b">
+                <h4>Pro Membership</h4>
+                <p class="price">$299/mo</p>
+                <a href="" class="btn">Buy Now</a>
+            </div> -->
+        </secton>
 
-
-  <body>
-    <div id="container"></div>
-      <header>
-         <div class= "header">
-           <h1 class= "item--1">James Groves</h1>
-           <h2>Software Developer</h2>
-         </div>
-       </header>
-
-       <main> 
-         <div id="Section1"
-           <section id="aboutMe">     
-             <h2>About Me</h2>
- 
-             <div>
-               <p>22 year old aspiring software developer</p>
-             </div> 
-             
-             <h3>Technical skills</h3>
-             <div>
-              <p>C# • .NET Core • Active Server Pages / ASP.net • JavaScript • Flexbox • MVC • HTML • CSS • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • React • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub</p>
-             </div>
-           </section>
-         </div> 
-
-         
-         <section id="projects">
-             <h2>My Projects</h2>
-               <p>Planned, designed, and developed professionally programmed applications in collaborative team-based and independent settings, demonstrating the proficiency to earn a Software Development Certificate</p>
-           
-         <div id="project">  
-            <article>
-               <h3><a href="https://github.com/GrovesJames/MyOwnVirtualPet">Virtual Pet</a></h3>
-               <img src="./images/pet.jpg"></img>
-               <p>Small Console App that allows a user to create pets, add them to a shelter and interact.</p>
-
-             </article>
-
-             <article>
-                <h3><a href="https://github.com/GrovesJames/HospitalProject">University Hospital</a></h3>
-                <img src="./images/hospital.jpg"></img>
-                <p>Database for a fictional hospital that allows users to manage employees and pay them.</p>
-             </article>
-
-             <article>
-                <h3><a href="https://github.com/GrovesJames/GrovesJames.github.io">Portfolio</a></h3>
-                <img src="./images/code.jpg"></img>
-                <p>Starter website built with HTML/CSS</p>
-             </article>
-
-           </div>
-         </section>
-        
-         <div id="section3">
-           <section id="contactMe">
-             <h2>Contact Me</h2>
+        <h2>Projects</h2>
             
-             <p><a href= "https://www.linkedin.com/in/james-groves-839572194/" target= "_blank">Linkedin</a></p>
-             <p><a href= "https://github.com/GrovesJames" target= "_blank">Github</a></p>
-           </section>
-         </div>
-       </main>
-     </div>
+            <!--Boxes section-->
+            <section class="boxes">
+                <div class="box">
+                    <i class="fas fa-paw fa-4x"></i>
+                    <h3><a href="https://github.com/GrovesJames/MyOwnVirtualPet">Virtual Pet</a></h3>
+                    <p>Create a Virtual Pet and interact with it!</p>
+                </div>
+                <div class="box">
+                     <i class="fas fa-hospital fa-4x"></i>                   
+                     <h3><a href="https://github.com/GrovesJames/MyUniversityHospital">University Hospital</a></h3>
+                     <p>Employed good software design in order to create a console application using Object Oriented principles</p>
+                </div>
+                <div class="box">
+                     <i class="fas fa-folder-open fa-4x"></i>                    
+                     <h3><a href="https://github.com/GrovesJames/GrovesJames.github.io">Portfolio</a></h3>
+                     <p>Created a professional porfolio using HTML and CSS</p>
+                </div>
+                <!-- <div class="box">
+                    <i class="fas fa-users fa-4x"></i>
+                    <h3>Support</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nam.</p>
+                </div> -->
+            </section>
+        
+        <h2>Contact</h2>
 
-     <nav>
-       <class="menuitem1"><a href="#container">About Me</a>
-       <class="menuitem2"><a href="#projects">Projects</a>
-       <class="menuitem3"><a href="#contactMe">Contact info</a>
-     </nav>
+        <section class="info">
+            <a class="butn" href="#">
+                 <i class="fab fa-linkedin fa-3x"></i>            
+            </a>
+            <a class="butn" href="#">
+                 <i class="fab fa-github-square fa-3x"></i>               
+            </a>
+        </section>
+        <!-- <section class="info">
+            <img src"img/pic1.jpg" alt"">
+            <div>
+                <h2>Filler</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta perferendis delectus ea voluptatem nostrum dolores, quo earum totam veritatis fugiat.</p>
+            </div>
+        </section> -->
+
+        <!--footer-->
+        <footer>
+            <p>James Groves &copy; 2019</p>
+        </footer>
 
 
-     <footer>
-       &copy; 2019
-     </footer>
+    </div>
+    <!-- wrapper ends -->
 
-
-   </body>
+</body>
 </html>
