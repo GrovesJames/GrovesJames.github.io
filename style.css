@@ -104,6 +104,10 @@ img{
     color: var(--light);
 }
 
+h2{
+    color: white;
+}
+
 /* top box */
 .top-box{
     background: var(--primary);
@@ -131,7 +135,7 @@ img{
 }
 
 /* projects */
-h2{
+#projects h2{
     text-align: center;
 }
 
@@ -150,19 +154,24 @@ h2{
     border: 3px solid var(--blue);
 }
 
+#contact h2{
+    text-align: center;
+}
+
 /* info */
 .info{
     /* background: var(--primary); */
     /* box-shadow: var(--shadow); */
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem;
 
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
 }
+
 
 .butn{
     display: inline-block;
@@ -245,6 +254,10 @@ footer{
     }
 
     .info{
+        grid-template-columns: 1fr;
+    }
+
+    .info2{
         grid-template-columns: 1fr;
     }
 
