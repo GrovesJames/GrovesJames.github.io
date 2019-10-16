@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background: #ccc;
+    background: white;
     /* background: white; */
     margin: 30px 50px;
     line-height: 1.4;
@@ -97,15 +97,15 @@ img{
     margin-bottom: 0;
     color: var(--light);
 }
+.showcase h2{
+    font-size: 2rem;
+    color: var(--light);
+}
 
 .showcase p{
     font-size: 1.3rem;
     margin-top: 0;
     color: var(--light);
-}
-
-h2{
-    color: white;
 }
 
 /* top box */
@@ -139,6 +139,10 @@ h2{
     text-align: center;
 }
 
+#projects h2, h3{
+    color: var(--blue);
+}
+
 /* boxes */
 .boxes{
     display: grid;
@@ -154,14 +158,33 @@ h2{
     border: 3px solid var(--blue);
 }
 
-#contact h2{
-    text-align: center;
+.box a{
+    position:relative;
+    margin:20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #000;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    transition:0.5s;
+    transform: translate(-40px);
+    opacity: 0;
+    visibility: hidden;
 }
 
-/* info */
+.box:hover a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* contact */
+#contact h2{
+    text-align: center;
+    color: var(--blue);
+}
+
 .info{
-    /* background: var(--primary); */
-    /* box-shadow: var(--shadow); */
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
@@ -231,10 +254,12 @@ h2{
 
 footer{
     margin-top: 2rem;
-    background: var(--dark);
-    color: var(--light);
+    background: var(--primary);
+    color: var(--dark);
     text-align: center;
     padding: 1rem;
+    box-shadow: var(--shadow);
+    border: 3px solid var(--blue);
 }
 
 /* media queries */
